@@ -1,0 +1,11 @@
+<div *ngFor="let p of posts?.data.children">
+    
+    Title: {{p.data.title}}
+    <br/>
+    Thumbnail link: {{p.data.thumbnail}}
+    <br/>
+    Subreddit: {{p.data.subreddit_name_prefixed}}<br/>
+    <br/>
+
+<app-post-view [myPost]="p"></app-post-view>
+</div>
